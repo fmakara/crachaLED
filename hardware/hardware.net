@@ -1,0 +1,195 @@
+# EESchema Netlist Version 1.1 created  29-08-2012 14:20:38
+(
+ ( /503E4D8F $noname  U1 MATRIX_LED {Lib=MATRIX_LED}
+  (    1 N-000024 )
+  (    2 ? )
+  (    3 N-000013 )
+  (    4 N-000025 )
+  (    5 ? )
+  (    6 N-000015 )
+  (    7 N-000026 )
+  (    8 ? )
+  (    9 N-000009 )
+  (   10 N-000027 )
+  (   11 ? )
+  (   12 N-000029 )
+  (   13 N-000031 )
+  (   14 ? )
+  (   15 N-000033 )
+  (   16 N-000005 )
+  (   17 ? )
+  (   18 N-000002 )
+  (   19 N-000003 )
+  (   20 ? )
+  (   21 N-000028 )
+  (   22 N-000030 )
+  (   23 ? )
+  (   24 N-000032 )
+ )
+ ( /503BD484 $noname  C1 C {Lib=C}
+  (    1 VCC )
+  (    2 GND )
+ )
+ ( /503BD47B $noname  P1 CONN_2 {Lib=CONN_2}
+  (    1 GND )
+  (    2 VCC )
+ )
+ ( /503BD447 $noname  K1 CONN_3 {Lib=CONN_3}
+  (    1 N-000007 )
+  (    2 N-000023 )
+  (    3 GND )
+ )
+ ( /503BC977 DIL28  IC1 ATMEGA8A-P {Lib=ATMEGA8A-P}
+  (    1 N-000034 )
+  (    2 N-000007 )
+  (    3 N-000023 )
+  (    4 ? )
+  (    5 N-000024 )
+  (    6 N-000013 )
+  (    7 VCC )
+  (    8 GND )
+  (    9 N-000025 )
+  (   10 N-000015 )
+  (   11 N-000026 )
+  (   12 N-000009 )
+  (   13 N-000027 )
+  (   14 N-000029 )
+  (   15 N-000031 )
+  (   16 N-000033 )
+  (   17 N-000005 )
+  (   18 N-000002 )
+  (   19 N-000003 )
+  (   20 VCC )
+  (   21 ? )
+  (   22 GND )
+  (   23 N-000028 )
+  (   24 N-000030 )
+  (   25 N-000032 )
+  (   26 ? )
+  (   27 ? )
+  (   28 N-000021 )
+ )
+ ( /503BD3C0 $noname  R2 10k {Lib=R}
+  (    1 VCC )
+  (    2 N-000021 )
+ )
+ ( /503BD3B4 $noname  SW2 SW_PUSH {Lib=SW_PUSH}
+  (    1 N-000021 )
+  (    2 GND )
+ )
+ ( /503BD2CE $noname  SW1 SW_PUSH {Lib=SW_PUSH}
+  (    1 GND )
+  (    2 N-000034 )
+ )
+ ( /503BD21F $noname  R1 10k {Lib=R}
+  (    1 N-000034 )
+  (    2 VCC )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component IC1
+ 28DIP-ELL600
+ 28dip600
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 2 "" ""
+ U1 18
+ IC1 18
+Net 3 "" ""
+ U1 19
+ IC1 19
+Net 4 "GND" "GND"
+ IC1 8
+ SW1 1
+ IC1 22
+ SW2 2
+ P1 1
+ C1 2
+ K1 3
+Net 5 "" ""
+ U1 16
+ IC1 17
+Net 6 "VCC" "VCC"
+ IC1 7
+ C1 1
+ R1 2
+ IC1 20
+ R2 1
+ P1 2
+Net 7 "" ""
+ K1 1
+ IC1 2
+Net 9 "" ""
+ IC1 12
+ U1 9
+Net 13 "" ""
+ IC1 6
+ U1 3
+Net 15 "" ""
+ IC1 10
+ U1 6
+Net 21 "" ""
+ IC1 28
+ R2 2
+ SW2 1
+Net 23 "" ""
+ K1 2
+ IC1 3
+Net 24 "" ""
+ IC1 5
+ U1 1
+Net 25 "" ""
+ IC1 9
+ U1 4
+Net 26 "" ""
+ U1 7
+ IC1 11
+Net 27 "" ""
+ U1 10
+ IC1 13
+Net 28 "" ""
+ U1 21
+ IC1 23
+Net 29 "" ""
+ IC1 14
+ U1 12
+Net 30 "" ""
+ U1 22
+ IC1 24
+Net 31 "" ""
+ IC1 15
+ U1 13
+Net 32 "" ""
+ U1 24
+ IC1 25
+Net 33 "" ""
+ IC1 16
+ U1 15
+Net 34 "" ""
+ IC1 1
+ R1 1
+ SW1 2
+}
+#End
